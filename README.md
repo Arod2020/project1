@@ -4,7 +4,7 @@
 
 1. Clone this project
 ```
-git clone https://github.com/verma-kunal/AWS-Session.git
+git clone https://github.com/Arod2020/Project1.git
 ```
 2. Setup the following environment variables - `(.env)` file
 ```
@@ -59,6 +59,7 @@ STATIC_DIR="./client"
 PUBLISHABLE_KEY=""
 SECRET_KEY=""
 ```
+> To use the Elastic IP, you need to associate with the instance the app is loaded on
 > For this project, we'll have to set up an [Elastic IP Address](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html) for our EC2 & that would be our `DOMAIN`
 
 3. Initialise and start the project
@@ -68,5 +69,7 @@ npm run start
 ```
 
 > NOTE - We will have to edit the **inbound rules** in the security group of our EC2, in order to allow traffic from our particular port
-
+> To modify the inbound rules, allow port 3000
+> To check the app is accessible via the internet, enter the IP address followed by a : followed by the port number used by the app
 ### Project is deployed on AWS 🎉
+
